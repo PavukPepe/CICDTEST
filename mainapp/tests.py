@@ -9,6 +9,6 @@ class SimpleTest(TestCase):
         obj2 = models.SimpleModel.objects.get(pk=2)
         self.assertEqual(obj2.just_text, 'text_2')
 
-    # def test_3_object_in_db(self):
-    #     obj2 = models.SimpleModel.objects.get(pk=3)
-    #     self.assertEqual(obj2.just_text, 'text_3')
+    def test_3_object_in_db(self):
+        obj2 = models.SimpleModel.objects.get(pk=3)
+        self.assertEqual(obj2.just_text, 'text_3')
